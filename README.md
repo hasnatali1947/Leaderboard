@@ -1,5 +1,7 @@
 <a name="readme-top"></a>
 
+  <h3><b>Leaderboard README Template</b></h3>
+
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents

@@ -7,29 +7,30 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <h1>LeaderBoard</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>LeaderBoard</h1>
+      </header>
 
-    <main class="container">
-      <div class="scoreList">
-        <div>
-          <h2>Recent scores</h2>
-          <button id="Refresh">Refresh</button>
+      <main class="main">
+        <div class="scoreList">
+          <div class="RefreshContainer">
+            <h2>Recent scores</h2>
+            <button id="Refresh">Refresh</button>
+          </div>
+          <div id="scoreCard"></div>
         </div>
-        <div id="scoreCard"></div>
-      </div>
 
-      <div class="submitList">
-        <h2>Add your score</h2>
-        <form action="">
+        <div class="submitList">
+          <h2>Add your score</h2>
+          <form action="">
             <input id="nameinput" type="text" placeholder="type name" />
             <input id="scoreinput" type="number" placeholder="type score" />
             <button type="submit" id="submit">Submit</button>
-        </form>
-      </div>
-    </main>
-
+          </form>
+        </div>
+      </main>
+    </div>
     <footer></footer>
   </body>
   <script src="index.js"></script>

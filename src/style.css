@@ -11,7 +11,17 @@ body {
   height: 100vh;
 }
 
-.container {
+/* .container{ */
+
+/* display: flex; */
+
+/* flex-direction: column; */
+
+/* align-items: flex-start; */
+
+/* } */
+
+.main {
   display: flex;
   justify-content: space-between;
   border: 2px solid;
@@ -30,6 +40,12 @@ body {
   width: 40vh;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 input {
   height: 4vh;
   width: 100%;
@@ -39,11 +55,15 @@ input {
 #scoreCard {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   height: 60vh;
   width: 50vh;
   overflow-y: scroll;
+}
+
+.RefreshContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 button {
@@ -72,6 +92,7 @@ footer {
   margin-top: 5vh;
   padding: 0;
   font-size: larger;
+  border-bottom: 1px solid;
 }
 
 li {
