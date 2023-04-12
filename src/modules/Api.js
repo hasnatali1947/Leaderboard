@@ -1,5 +1,5 @@
 const post = async (object) => {
-  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ZEkSj3aHvfo77HaUbGSz/scores/',
+  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ESR4hOd8yk9LvYkRVQNB/scores/',
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -11,7 +11,7 @@ const post = async (object) => {
 };
 
 const get = async () => {
-  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ZEkSj3aHvfo77HaUbGSz/scores/',
+  const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/ESR4hOd8yk9LvYkRVQNB/scores/',
     {
       method: 'GET',
     })
