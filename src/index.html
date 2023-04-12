@@ -7,25 +7,33 @@
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <h1>LeaderBoard</h1>
+    </header>
     <div class="container">
-      <header>
-        <h1>LeaderBoard</h1>
-      </header>
 
-      <main class="main">
+
+      <main class="main">   
+      <div class="mobileContainer">
+        <h2>Recent scores</h2>
         <div class="scoreList">
-          <div class="RefreshContainer">
-            <h2>Recent scores</h2>
-            <button id="Refresh">Refresh</button>
-          </div>
+          <div class="mobSpeaker"></div>
           <div id="scoreCard"></div>
         </div>
+      </div>
+        <button id="Refresh">Refresh</button>
 
         <div class="submitList">
           <h2>Add your score</h2>
           <form action="">
             <input id="nameinput" type="text" placeholder="type name" />
-            <input id="scoreinput" type="number" placeholder="type score" />
+            <input
+              id="scoreinput"
+              type="number"
+              placeholder="type score"
+              required
+              maxlength="99999"
+            />
             <button type="submit" id="submit">Submit</button>
           </form>
         </div>
