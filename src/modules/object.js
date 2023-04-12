@@ -3,7 +3,7 @@ export default class Score {
     this.score = [];
   }
 
-  add(name, scores) {
-    this.score.push({ name, scores });
+  add(user, score) {
+    this.score.push({ user, score });
   }
 }
