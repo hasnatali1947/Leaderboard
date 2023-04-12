@@ -27,24 +27,36 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [To-do-list] <a name="about-project"></a>
+# 📖 [Leader Board] <a name="about-project"></a>
 
-**[To-do-list]** is a project of creating a to do list using the HTML, CSS and JavaScript to dynamically create the list as well as interacting with it. It also involve using of webpack so as to lead and manage the packages in the code.
+> The leader-board website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leader-board API service.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-- Javascript
-- HTML-5
-- Linters
-- CSS
-- Webpack
-
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="">JavaScript</a></li>
+    <li><a href="">HTML</a></li>
+    <li><a href="">CSS</a></li>
+    <li><a href="">JS</a></li>
+    <li><a href="">Webpack</a></li>
+  </ul>
+</details>
+
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="">External API</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="">External API</a></li>
   </ul>
 </details>
 
@@ -60,8 +72,8 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](Coming soon)
+https://hasnatali1947.github.io/Leaderboard/
+> <a href="https://hasnatali1947.github.io/Leaderboard/" >Live</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -69,46 +81,82 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-This project is useful and important as it gives developers an experience of how to add and remove list elements.
-
-To get a local copy up and running, follow these steps.
-
 ### Prerequisites
 
-In order to run this project you need a compatible browser to load the html file
+In order to run this project you need:
+
+- [ ] A PC running any operating system like Windows, Linux, or MacOS
+- [ ] An Internet connection
+- [ ] Git installed
+- [ ] Webpack installed
+- [ ] Knowledge of some basic Git commands
 
 ### Setup
 
+- [ ] Link your PC to GitHub
+- [ ] Clone this repository to your desired folder:
+
 Clone this repository to your desired folder:
 
-```sh
-  cd my-folder
-  git clone https://github.com/yegonkimutai/To-do-list.git
-```
+```git clone https://hasnatali1947.github.io/Leaderboard/```
+
+- [ ] Open the file in your code editor
 
 ### Install
+- [ ] Setup JavaScript + CSS + HTML linter
 
-Install this project with:
+Run the following codes in your project folder in your IDE:
 
-```sh
-  cd to-do-list
-  yarn install
+```
+npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
 ```
 
-### Usage
+```
+npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+```
 
--I can help in building a product , feature or website through some of my work and experience! Don’t hestiate to contact me.
+- [ ] node_modules
+
+```
+npm install -g node-modules
+```
+
+- [ ] webpack
+
+```
+npm install -g webpack
+```
+
+```
+npm install -g webpack-cli
+```
+
+- [ ] project dependencies
+
+```
+npm install
+```
+### Usage
+To run the project, execute the following command:
+
+
+Start the server
+
+```
+npm run start
+```
 
 ### Run tests
 
-To run tests, run the following command:
+To run Stylelint and ESLint tests, run the following commands respectively:
 
-```sh
-  npx hint .
-  npx stylelint "\*_/_.{css,scss}"
+```
+npx stylelint "**/*.{css,scss}"
 ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```
+npx eslint .
+```
 
 <!-- AUTHORS -->
 
@@ -127,8 +175,11 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[More styling]**
-- [ ] **[Modification of appearance to look awesome]**
+- [ ] **[Create a new game using an API]**
+- [ ] **[Implement the "Refresh" button that will get all scores for a game created by you from the API]**
+- [ ] **[Implement the form "Submit" button that will save a score for a game created by you]**
+- [ ] **[Use async and await JavaScript features to consume the API]**
+- [ ] **[Better styling]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
