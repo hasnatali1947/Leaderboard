@@ -71,9 +71,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-https://hasnatali1947.github.io/Leaderboard/
-> <a href="https://hasnatali1947.github.io/Leaderboard/dist/" >Live</a>
+## 🚀 Live Demo <a name="live-demo"> (https://hasnatali1947.github.io/Leaderboard/dist)</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
