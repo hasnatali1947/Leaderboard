@@ -3,47 +3,50 @@ import Score from './modules/object.js';
 import * as API from './modules/Api.js';
 
 const scores = new Score();
-
 const scoreCard = document.getElementById('scoreCard');
-const nameinput = document.getElementById('nameinput');
-const scoreinput = document.getElementById('scoreinput');
-const Refresh = document.getElementById('Refresh');
-const submitform = document.querySelector('form');
+const nameInput = document.getElementById('nameinput');
+const scoreInput = document.getElementById('scoreinput');
+const refreshBtn = document.getElementById('Refresh');
+const submitForm = document.querySelector('form');
 
-const display = () => {
+const displayScores = () => {
   scoreCard.innerHTML = '';
   scores.score.forEach((e) => {
-    scoreCard.innerHTML += `<ul class="ul">
-                <li >${e.user}</li> : <li class="li">${e.score}</li>
-            </ul>`;
+    scoreCard.innerHTML += `
+      <ul class="ul">
+        <li>${e.user}</li> : <li class="li">${e.score}</li>
+      </ul>`;
   });
 };
-display();
 
-Refresh.addEventListener('click', async () => {
+const refreshScores = async () => {
   const data = await API.get();
   scores.score = data.result;
-  display();
-});
+  displayScores();
+};
 
-submitform.addEventListener('submit', ((e) => {
+const submitFormHandler = (e) => {
   e.preventDefault();
 
-  const user = nameinput.value;
-  const score = scoreinput.value;
+  const user = nameInput.value;
+  const score = scoreInput.value;
   if (user !== '' && score !== '') {
     scores.add(user, score);
     API.post({ user, score });
-    display();
-    nameinput.value = '';
-    scoreinput.value = '';
+    displayScores();
+    nameInput.value = '';
+    scoreInput.value = '';
   } else {
-    alert('please type both UserName and Score');
+    alert('Please enter both Username and Score.');
   }
-}));
+};
 
-window.addEventListener('DOMContentLoaded', (async () => {
-  const data = await API.get();
-  scores.score = data.result;
-  display();
-}));
+window.addEventListener('DOMContentLoaded', async () => {
+  await refreshScores();
+});
+
+refreshBtn.addEventListener('click', async () => {
+  await refreshScores();
+});
+
+submitForm.addEventListener('submit', submitFormHandler);

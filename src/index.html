@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <h1>LeaderBoard</h1>
-    </header>
-    <div class="container">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeaderBoard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>LeaderBoard</h1>
+  </header>
 
-
-      <main class="main">   
+  <main class="container">
+    <div class="main">
       <div class="mobileContainer">
         <h2>Recent scores</h2>
         <div class="scoreList">
@@ -21,25 +21,28 @@
           <div id="scoreCard"></div>
         </div>
       </div>
-        <button id="Refresh">Refresh</button>
 
-        <div class="submitList">
-          <h2>Add your score</h2>
-          <form action="">
-            <input id="nameinput" type="text" placeholder="type name" />
-            <input
-              id="scoreinput"
-              type="number"
-              placeholder="type score"
-              required
-              maxlength="99999"
-            />
-            <button type="submit" id="submit">Submit</button>
-          </form>
-        </div>
-      </main>
+      <button id="Refresh">Refresh</button>
+
+      <div class="submitList">
+        <h2>Add your score</h2>
+        <form id="submitForm" action="">
+          <input id="nameinput" type="text" placeholder="Enter name" />
+          <input
+            id="scoreinput"
+            type="number"
+            placeholder="Enter score"
+            required
+            min="0"
+          />
+          <button type="submit" id="submitBtn">Submit</button>
+        </form>
+      </div>
     </div>
-    <footer></footer>
-  </body>
+  </main>
+
+  <footer></footer>
+
   <script src="index.js"></script>
+</body>
 </html>
