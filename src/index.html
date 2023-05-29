@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>LeaderBoard</h1>
+    </header>
+    <div class="container">
+
+
+      <main class="main">   
+      <div class="mobileContainer">
+        <h2>Recent scores</h2>
+        <div class="scoreList">
+          <div class="mobSpeaker"></div>
+          <div id="scoreCard"></div>
+        </div>
+      </div>
+        <button id="Refresh">Refresh</button>
+
+        <div class="submitList">
+          <h2>Add your score</h2>
+          <form action="">
+            <input id="nameinput" type="text" placeholder="type name" />
+            <input
+              id="scoreinput"
+              type="number"
+              placeholder="type score"
+              required
+              maxlength="99999"
+            />
+            <button type="submit" id="submit">Submit</button>
+          </form>
+        </div>
+      </main>
+    </div>
+    <footer></footer>
+  </body>
+  <script src="index.js"></script>
+</html>
