@@ -201,9 +201,9 @@ If you like this project please like and share. You can also reach out to my pla
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my partner and reviewers of the code for helping make the site better.
+I would like to thank my partner and reviewers of the code for helping make the site better. the design is inspired by <a href="#readme-top">back to top</a>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="https://github.com/shayan1234554321"></a>)</p>
 
 <!-- LICENSE -->
 
